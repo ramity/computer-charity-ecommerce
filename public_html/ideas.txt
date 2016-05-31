@@ -1,0 +1,7 @@
+News topics to increase site traffic.
+Use popular topics to increase notority.
+Update rest of site to reflect look of blog.
+Add news tab.
+Add comments section.
+Add comments DB + pid for tables.
+Add post editor that includes a preivew and upon posting, creates all the nessisary files and database items.

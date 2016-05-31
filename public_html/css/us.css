@@ -1,0 +1,53 @@
+div#us
+{
+width:100%;
+float:left;
+margin-top:55px;
+}
+div#usinr
+{
+width:960px;
+margin:0px auto;
+}
+div#usprofile
+{
+width:960px;
+float:left;
+background-image:url('https://ramity.com/img/cover.jpg');
+background-size:100% 100%;
+border-bottom:5px solid #666;
+}
+div#usprofilepos
+{
+width:0px;
+height:0px;
+float:left;
+}
+div#usprofileposlogo
+{
+width:200px;
+height:200px;
+float:left;
+position:fixed;
+margin:220px 380px;
+background-image:url('https://ramity.com/img/rlogo2.png');
+background-size:200px 200px;
+}
+div#usprofilebanner
+{
+width:478px;
+height:640px;
+float:left;
+}
+div#usprofilelistbar
+{
+width:960px;
+height:50px;
+float:left;
+background-color:#fff;
+border-top:4px solid #0cf
+}
+div#usprofilelistbar
+{
+width:480px;
+}
