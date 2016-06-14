@@ -1,4 +1,6 @@
 <?php
+die('This hacky API is no longer working due to site changes to pcpartpicker');
+
 $opts = array(
   'https'=>array(
     'method'=>"GET",

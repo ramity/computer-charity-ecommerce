@@ -1,4 +1,6 @@
 <?php
+die('This page requires database integration');
+
 require_once('/home/ramity/modules/vars.php');
 require_once('/home/ramity/modules/cookie.php');
 if(isset($_GET['id'])&&!empty($_GET['id']))
@@ -14,7 +16,7 @@ if(isset($_GET['id'])&&!empty($_GET['id']))
 			$bits=explode('<!-- heading -->',$file);
 			$totalprice=cut('<td style="text-align:right;padding-bottom:0px;color:#555;vertical-align:top;padding-top:2px;font-weight:bold;">','</td>',$file);
 			$totalprice=$totalprice[0];
-			
+
 			$totalpricealt=str_replace('$','',$totalprice);
 			$totalpricealt=str_replace('.','',$totalpricealt);
 			if($totalpricealt!=$results['retailprice'])
@@ -90,7 +92,7 @@ else
 								{
 									$(this).stop().animate({backgroundColor:'transparent',color:'#fff'},500);
 								});
-								
+
 								$("#tobuy").click(function(event){scrollto(event,"#checkout");});
 								$("#towish").click(function(event){scrollto(event,"#wish");});
 								$("#tosub").click(function(event){scrollto(event,"#sub");});
@@ -123,17 +125,17 @@ else
 								$line=cut('<div style="margin-top:8px;">','</div>',$part);
 								$line=cut('">','</a>',$line[0]);
 								$itemname=$line[0];
-								
+
 								if(empty($itemname))continue;
 								$line=cut('<b>','</b>',$part);
 								$line=cut('">','</a>',$line[0]);
 								$itemtype=$line[0];
-								
+
 								if(empty($itemtype))
 								{
 									$itemtype=$previoustype;
 								}
-								
+
 								$previoustype=$itemtype;
 								$line=cut(' rel="nofollow" target="_blank">','</a>',$part);
 								$itemprice=$line[0];
@@ -176,22 +178,22 @@ else
 							$line=cut('<div style="margin-top:8px;">','</div>',$part);
 							$line=cut('">','</a>',$line[0]);
 							$itemname=$line[0];
-							
+
 							if(empty($itemname))continue;
 							$line=cut('<b>','</b>',$part);
 							$line=cut('">','</a>',$line[0]);
 							$itemtype=$line[0];
-							
+
 							if(empty($itemtype))
 							{
 								$itemtype=$previoustype;
 							}
-							
+
 							$previoustype=$itemtype;
 							$line=cut(' rel="nofollow" target="_blank">','</a>',$part);
 							$itemprice=str_replace('$','',$line[0]);
 							$itemprice+=$itempepper;
-							
+
 							echo '<div class="checkoutitem">';
 								echo '<div class="checkoutitemquantity">1</div>';
 								echo '<div class="checkoutitemname">'.$itemtype.' : '.$itemname.'</div>';

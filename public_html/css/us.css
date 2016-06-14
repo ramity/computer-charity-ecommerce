@@ -13,7 +13,7 @@ div#usprofile
 {
 width:960px;
 float:left;
-background-image:url('https://ramity.com/img/cover.jpg');
+background-image:url('../img/cover.jpg');
 background-size:100% 100%;
 border-bottom:5px solid #666;
 }
@@ -30,7 +30,7 @@ height:200px;
 float:left;
 position:fixed;
 margin:220px 380px;
-background-image:url('https://ramity.com/img/rlogo2.png');
+background-image:url('../img/rlogo2.png');
 background-size:200px 200px;
 }
 div#usprofilebanner

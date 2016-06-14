@@ -13,11 +13,13 @@
 				</a>
 				<div class="topbarnavddholder">
 					<?php
-					$builds=buildQueryFetchAll('ramity_collection','SELECT id,title,siteprice FROM `builds` ORDER BY siteprice ASC');
+          /*
+          $builds=buildQueryFetchAll('ramity_collection','SELECT id,title,siteprice FROM `builds` ORDER BY siteprice ASC');
 					for($q=0;$q<count($builds);$q++)
 					{
 						echo '<a class="topbarnavitemdd" href="https://ramity.com/search?id='.$builds[$q]['id'].'&type=build" title="$'.number_format($builds[$q]['siteprice']/100,2,'.',',').'">'.$builds[$q]['title'].'</a>';
 					}
+          */
 					?>
 				</div>
 			</div>

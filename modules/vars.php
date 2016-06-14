@@ -3,8 +3,8 @@ error_reporting(E_ALL);
 $currentUpdateVersion='0.01 Foxy';
 if(isset($_SERVER['HTTP_HOST']))
 	$domainName=$_SERVER['HTTP_HOST'];
-$adminName="ramity";
-$adminPassword="Gr33ndayadmin";
+$adminName="username";
+$adminPassword="password";
 $secureLogin=false;
 $salt='$6$rounds=5000$2a07fKFNGBoDjWAfb1jV5rnd-cPSuqbPDMM6jHvYpeTUKf';
 $token=generateToken();

@@ -1,6 +1,6 @@
 <?php
-require_once('/home/ramity/modules/vars.php');
-require_once('/home/ramity/modules/cookie.php');
+require_once('../modules/vars.php');
+require_once('../modules/cookie.php');
 ?>
 <!DOCTYPE>
 <html>
@@ -9,17 +9,16 @@ require_once('/home/ramity/modules/cookie.php');
 		<meta name="description" content="Custom built PCs. Liquid cooled and high performing components to meet all your gaming needs.">
 		<meta name="keywords" content="gaming, custom, PC, deals, gaming computers, best pcs, custom computers">
 		<meta name="author" content="Lewis Brown">
-		<link rel="stylesheet" type="text/css" href="https://ramity.com/css/topbar.css">
-		<link rel="stylesheet" type="text/css" href="https://ramity.com/css/us.css">
-		<link rel="stylesheet" type="text/css" href="https://ramity.com/css/footer.css">
+		<link rel="stylesheet" type="text/css" href="css/topbar.css">
+		<link rel="stylesheet" type="text/css" href="css/us.css">
+		<link rel="stylesheet" type="text/css" href="css/footer.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
-		<script src="https://ramity.com/js/analytics.js"></script>
 		<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300' rel='stylesheet' type='text/css'>
 		<title>Custom PCs, gaming news, reviews, and more all in one place</title>
 	</head>
 	<body>
-		<?php require_once('/home/ramity/modules/block/topbar.php');?>
+		<?php require_once('../modules/block/topbar.php');?>
 		<div id="us">
 			<div id="usinr">
 				<div id="usprofile">
@@ -46,6 +45,6 @@ require_once('/home/ramity/modules/cookie.php');
 				</div>
 			</div>
 		</div>
-		<?php require_once('/home/ramity/modules/block/footer.php');?>
+		<?php require_once('../modules/block/footer.php');?>
 	</body>
 </html>
